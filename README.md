@@ -17,14 +17,16 @@ A link here to play: <empty now> <coming out soon!>
 OK you got this. Play the game here: <Hello I'm just a link of a game that does not exist yet but my developer is working on this thank you so much stay tuned>
 
 ## Functionality & MVP
-[ ]  User can name the cat
-[ ]  User can drag and drop the food
-[ ]  User will see warnings for wrong food
-[ ]  Cat becomes happy when satisfied with food
+- User can name the cat
+- User can drag and drop the food
+- User will see warnings for wrong food
+- Cat's happiness will increase/decrease with food
+- User will go to the next level when happiness reach 100
+- Game over when happiness drops to 0
 
 #### Bonus:
-[ ]  Dialogue box
-[ ]  Add storyline
+- Dialogue box
+- Add storyline
 
 ## Wireframes
 
@@ -34,19 +36,27 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 
 #### frameworks:
 [html5-boilerplate](https://html5boilerplate.com/)
+[Fancybox](http://fancyapps.com/fancybox/3/)
 
 ## Implementation Timeline
 #### Weekend:
-[ ]  Learn about HTML5 & JS
-[ ]  Design Wireframes
+- Learn about HTML5 & JS
+- Design Wireframes
 
 #### Day1:
+
 #### Day2:
+
 #### Day3:
+
 #### Day4:
 
 ## Credit
+#### Cat images
 Cat characters are designed by [Denis Sazhin](http://iconka.com/en/).
 
 This project is using this license:
 - Cat Power Animated – Regular Commercial License
+
+#### [Unsplash](https://unsplash.com/) images
+[Home photo](https://unsplash.com/photos/_-JR5TxKNSo) by ian dooley
