@@ -24,7 +24,7 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 - User can drag and drop the food
 - User will see warnings for wrong food
 - Cat's happiness will increase/decrease with food
-- User will go to the next level when happiness reach 100
+- User will go to the next level when happiness reaches 100
 - Game over when happiness drops to 0
 
 #### Bonus:

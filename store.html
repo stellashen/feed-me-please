@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link  href="css/jquery.fancybox.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/store.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway|Montserrat|Open+Sans|Poiret+One|Source+Sans+Pro" rel="stylesheet">
     </head>
@@ -36,23 +37,23 @@
       <section id="main">
         <div class="container">
           <ul id="gallery">
-            <li data-tags="Fish"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/canned_goods.png"></li>
-            <li data-tags="Fish"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865973/fishbone.png"></li>
-            <li data-tags="Meat"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865975/steak.png"></li>
-            <li data-tags="Meat"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/chicken.png"></li>
-            <li data-tags="Fruit"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/grape.png"></li>
-            <li data-tags="Fruit"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/strawberry.png"></li>
-            <li data-tags="Fruit"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866794/banana.png"></li>
-            <li data-tags="Drink"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866257/alcohol.png"></li>
-            <li data-tags="Drink"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/milk.png"></li>
-            <li data-tags="Drink"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866803/juice.png"></li>
-            <li data-tags="Other"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/cheese.png"></li>
-            <li data-tags="Other"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/mint.png"></li>
-            <li data-tags="Other"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/cake.png"></li>
-            <li data-tags="Other"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/onion.png"></li>
-            <li data-tags="Fish"><img src="http://res.cloudinary.com/devleg/image/upload/v1523867263/rawfish.png"></li>
-            <li data-tags="Other"><img src="http://res.cloudinary.com/devleg/image/upload/v1523867263/raisin.png"></li>
-            <li data-tags="Other"><img src="http://res.cloudinary.com/devleg/image/upload/v1523867750/chocolate.png"></li>
+            <li data-tags="Fish"><a data-fancybox="gallery" data-caption="Canned Fish" href="http://res.cloudinary.com/devleg/image/upload/v1523865974/canned_goods.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/canned_goods.png"></a></li>
+            <li data-tags="Fish"><a data-fancybox="gallery" data-caption="Fish Bone" href="http://res.cloudinary.com/devleg/image/upload/v1523865973/fishbone.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865973/fishbone.png"></a></li>
+            <li data-tags="Meat"><a data-fancybox="gallery" data-caption="Steak" href="http://res.cloudinary.com/devleg/image/upload/v1523865975/steak.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865975/steak.png"></a></li>
+            <li data-tags="Meat"><a data-fancybox="gallery" data-caption="Chicken" href="http://res.cloudinary.com/devleg/image/upload/v1523865974/chicken.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/chicken.png"></a></li>
+            <li data-tags="Fruit"><a data-fancybox="gallery" data-caption="Grape" href="http://res.cloudinary.com/devleg/image/upload/v1523866795/grape.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/grape.png"></a></li>
+            <li data-tags="Fruit"><a data-fancybox="gallery" data-caption="Strawberry" href="http://res.cloudinary.com/devleg/image/upload/v1523866795/strawberry.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/strawberry.png"></a></li>
+            <li data-tags="Fruit"><a data-fancybox="gallery" data-caption="Banana" href="http://res.cloudinary.com/devleg/image/upload/v1523866794/banana.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866794/banana.png"></a></li>
+            <li data-tags="Drink"><a data-fancybox="gallery" data-caption="Alcohol" href="http://res.cloudinary.com/devleg/image/upload/v1523866257/alcohol.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866257/alcohol.png"></a></li>
+            <li data-tags="Drink"><a data-fancybox="gallery" data-caption="Milk" href="http://res.cloudinary.com/devleg/image/upload/v1523865974/milk.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/milk.png"></a></li>
+            <li data-tags="Drink"><a data-fancybox="gallery" data-caption="Orange Juice" href="http://res.cloudinary.com/devleg/image/upload/v1523866803/juice.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866803/juice.png"></a></li>
+            <li data-tags="Other"><a data-fancybox="gallery" data-caption="Cheese" href="http://res.cloudinary.com/devleg/image/upload/v1523865974/cheese.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/cheese.png"></a></li>
+            <li data-tags="Other"><a data-fancybox="gallery" data-caption="Mint" href="http://res.cloudinary.com/devleg/image/upload/v1523865974/mint.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523865974/mint.png"></a></li>
+            <li data-tags="Other"><a data-fancybox="gallery" data-caption="Cake" href="http://res.cloudinary.com/devleg/image/upload/v1523866795/cake.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/cake.png"></a></li>
+            <li data-tags="Other"><a data-fancybox="gallery" data-caption="Onion" href="http://res.cloudinary.com/devleg/image/upload/v1523866795/onion.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523866795/onion.png"></a></li>
+            <li data-tags="Fish"><a data-fancybox="gallery" data-caption="Raw Fish" href="http://res.cloudinary.com/devleg/image/upload/v1523867263/rawfish.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523867263/rawfish.png"></a></li>
+            <li data-tags="Other"><a data-fancybox="gallery" data-caption="Raisin" href="http://res.cloudinary.com/devleg/image/upload/v1523867263/raisin.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523867263/raisin.png"></a></li>
+            <li data-tags="Other"><a data-fancybox="gallery" data-caption="Chocolate" href="http://res.cloudinary.com/devleg/image/upload/v1523867750/chocolate.png"><img src="http://res.cloudinary.com/devleg/image/upload/v1523867750/chocolate.png"></a></li>
           </ul>
         </div>
       </section>
@@ -70,8 +71,14 @@
 
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/jquery.quicksand.js"></script>
-
+        <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+          // call Fancybox
+          $(document).ready(function(){
+            $(".fancybox").fancybox();
+          })
+        </script>
 
     </body>
 </html>
