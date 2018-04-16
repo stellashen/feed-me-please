@@ -32,15 +32,15 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 There are two scenes in this game:
 
 **Home**
-![home](https://github.com/stellashen/feed-me-please/blob/master/docs/wireframes/home.png)
+<img src="https://res.cloudinary.com/devleg/image/upload/v1523877409/home.png" width="800">
 
 **Store**
-![store](https://github.com/stellashen/feed-me-please/blob/master/docs/wireframes/store.png)
+ <img src="https://res.cloudinary.com/devleg/image/upload/v1523877388/store.png" width="800">
 
 ## Architecture and Technologies
-- Vanilla JavaScript and jQuery for game logic
+- Vanilla JavaScript for game logic
 - HTML5 Canvas for DOM manipulation and rendering
-- React for widgets
+- jQuery and CSS for styling
 
 #### frameworks:
 [html5-boilerplate](https://html5boilerplate.com/)
@@ -53,10 +53,11 @@ There are two scenes in this game:
 #### Weekend:
 - Learn about HTML5 & JS
 - Design Wireframes
+- Start making `store` page
 
 #### Day1:
 - Learn about drag and drop
-- Style `store` with Fancybox and Quicksand
+- Finish `store`
 - User can drag items from store into shopping cart
 - After clicking "Buy", purchased items will be added to `My Bag`
 
