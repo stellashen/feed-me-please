@@ -27,7 +27,7 @@ body{
 }
 
 .heading img {
-  width: 80px;
+  width: 60px;
 }
 
 h1 {
@@ -73,14 +73,14 @@ a {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 65vh;
 }
 
 #main li {
   float:left;
   position: relative;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   list-style: none;
   margin: 7px;
   -moz-box-shadow: 0 0 5px #000;

@@ -16,6 +16,9 @@ A link here to play: <empty now> <coming out soon!>
 
 OK you got this. Play the game here: <Hello I'm just a link of a game that does not exist yet but my developer is working on this thank you so much stay tuned>
 
+## Screenshots
+![store](https://res.cloudinary.com/devleg/image/upload/v1523878533/store_v1.png)
+
 ## Functionality & MVP
 - User can name the cat
 - User can drag and drop the food
@@ -32,10 +35,12 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 There are two scenes in this game:
 
 **Home**
-<img src="https://res.cloudinary.com/devleg/image/upload/v1523877409/home.png" width="800">
+
+<img src="https://res.cloudinary.com/devleg/image/upload/v1523877409/home.png" width="600">
 
 **Store**
- <img src="https://res.cloudinary.com/devleg/image/upload/v1523877388/store.png" width="800">
+
+ <img src="https://res.cloudinary.com/devleg/image/upload/v1523877388/store.png" width="600">
 
 ## Architecture and Technologies
 - Vanilla JavaScript for game logic
