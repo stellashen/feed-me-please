@@ -29,6 +29,13 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 - Add storyline
 
 ## Wireframes
+There are two scenes in this game:
+
+**Home**
+![home](https://github.com/stellashen/feed-me-please/blob/master/docs/wireframes/home.png)
+
+**Store**
+![store](https://github.com/stellashen/feed-me-please/blob/master/docs/wireframes/store.png)
 
 ## Architecture and Technologies
 - Vanilla JavaScript and jQuery for game logic
@@ -44,12 +51,23 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 - Design Wireframes
 
 #### Day1:
+- Learn about drag and drop
+- Create `store` with Fancybox
+- User can drag items from store into shopping cart
+- After clicking "Buy", purchased items will be added to `My Bag`
 
 #### Day2:
+- Create `home` with HTML5 canvas
+- Create welcome Modal, where user enters: user's name, and cat's name
+- User can drag items from `My Bag` to cat's bowl
 
 #### Day3:
+- Cat animations based on food type
+- Cat happiness progress bar changes with food fed
+- Pop-up warnings for wrong food
 
 #### Day4:
+- CSS 2D animation
 
 ## Credit
 #### Cat images
