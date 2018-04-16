@@ -1,5 +1,9 @@
 // credit: code from Eduonix's Udemy video:
 // https://www.udemy.com/projects-in-html5/learn/v4/t/lecture/1293122?start=60
+
+// fix error: jQuery 1.9 .live() is not a function
+// https://stackoverflow.com/questions/14354040/jquery-1-9-live-is-not-a-function
+
 $(document).ready(function(){
   const items = $('#gallery li');
   const itemsByTags = {};
@@ -25,7 +29,7 @@ $(document).ready(function(){
     createList(k, v);
   });
 
-  $('#navbar a').live('click', function(e){
+  $('#navbar').on('click', 'a', function(e){
     const link = $(this);
     link.addClass('active').siblings().removeClass('active');
 
