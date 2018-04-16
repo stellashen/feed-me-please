@@ -40,9 +40,11 @@ There are two scenes in this game:
 ## Architecture and Technologies
 - Vanilla JavaScript and jQuery for game logic
 - HTML5 Canvas for DOM manipulation and rendering
+- React for widgets
 
 #### frameworks:
 [html5-boilerplate](https://html5boilerplate.com/)
+
 [Fancybox](http://fancyapps.com/fancybox/3/)
 
 ## Implementation Timeline
@@ -70,11 +72,11 @@ There are two scenes in this game:
 - CSS 2D animation
 
 ## Credit
-#### Cat images
+#### 1. Cat images
 Cat characters are designed by [Denis Sazhin](http://iconka.com/en/).
 
 This project is using this license:
 - Cat Power Animated – Regular Commercial License
 
-#### [Unsplash](https://unsplash.com/) images
+#### 2. [Unsplash](https://unsplash.com/) images
 [Home photo](https://unsplash.com/photos/_-JR5TxKNSo) by ian dooley
