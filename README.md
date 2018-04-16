@@ -44,8 +44,10 @@ There are two scenes in this game:
 
 #### frameworks:
 [html5-boilerplate](https://html5boilerplate.com/)
-
 [Fancybox](http://fancyapps.com/fancybox/3/)
+
+#### plugin:
+[Quicksand](https://razorjack.net/quicksand/)
 
 ## Implementation Timeline
 #### Weekend:
@@ -54,7 +56,7 @@ There are two scenes in this game:
 
 #### Day1:
 - Learn about drag and drop
-- Create `store` with Fancybox
+- Style `store` with Fancybox and Quicksand
 - User can drag items from store into shopping cart
 - After clicking "Buy", purchased items will be added to `My Bag`
 

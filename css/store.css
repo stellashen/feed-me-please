@@ -1,0 +1,106 @@
+/*
+font-family: 'Poiret One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+/* credit: part of code here was learnt from Eduonix's Udemy video:
+https://www.udemy.com/projects-in-html5/learn/v4/t/lecture/1293122?start=60 */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FAFAFA;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading *{
+  display: inline;
+}
+
+.heading img {
+  width: 80px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  width: 60%;
+  margin: 20px auto;
+  overflow: auto;
+}
+
+#navbar {
+  display: block;
+  height: 50px;
+  background-color: #BA4A00;
+  text-align: center;
+}
+
+#navbar a {
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#navbar a.active, #navbar a:hover {
+  background: #DC7633;
+}
+
+#main {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+#main li {
+  float:left;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  list-style: none;
+  margin: 7px;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+#main img {
+  width: 100%;
+}
+
+#main ul {
+  overflow: hidden;
+}
+
+#main ul.hidden {
+  display: none;
+}
+
+footer{
+  text-align: center;
+  color: #424949;
+}
