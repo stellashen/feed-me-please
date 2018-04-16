@@ -32,12 +32,13 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 - Vanilla JavaScript and jQuery for game logic
 - HTML5 Canvas for DOM manipulation and rendering
 
+#### frameworks:
+[html5-boilerplate](https://html5boilerplate.com/)
+
 ## Implementation Timeline
 #### Weekend:
 [ ]  Learn about HTML5 & JS
 [ ]  Design Wireframes
-[ ]  Add Webpack & .gitignore
-[ ]  Add index.html
 
 #### Day1:
 #### Day2:
