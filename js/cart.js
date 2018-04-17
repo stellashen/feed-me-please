@@ -1,4 +1,4 @@
-// credit: David Brennan, drag and drop example: 
+// credit: David Brennan, drag and drop example:
 // https://medium.com/quick-code/simple-javascript-drag-drop-d044d8c5bed5
 
 class App {
@@ -10,7 +10,7 @@ class App {
     App.box.addEventListener("dragstart", App.dragstart);
     App.box.addEventListener("dragend", App.dragend);
 
-    const containers = document.getElementsByClassName('holder');
+    const containers = document.getElementsByClassName('item');
 
     for(const container of containers) {
       container.addEventListener("dragover", App.dragover);
@@ -42,11 +42,11 @@ class App {
   }
 
   static dragleave() {
-    this.className = "holder";
+    this.className = "item";
   }
 
   static drop() {
-    this.className = "holder";
+    this.className = "item";
     this.append(App.box);
   }
 }

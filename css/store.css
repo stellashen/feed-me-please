@@ -123,7 +123,7 @@ footer{
   left: 70%;
   border: 1px solid gray;
   width: 20%;
-  height: 520px;
+  height: auto;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -154,18 +154,21 @@ footer{
 .items-in-cart {
   display: flex;
   flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 250px;
 }
 
-.item {
+.cart-item {
   width: 100px;
   height: 100px;
   border: 2px dashed gray;
   margin: 10px;
+  box-sizing: border-box;
 }
 
 button {
   font-size: 20px;
-  padding: 10px 60px;
+  padding: 10px 50px;
   margin-top: 20px;
   background-color: #D35400;
   color: white;
