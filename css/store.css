@@ -77,7 +77,7 @@ a {
   min-height: 65vh;
 }
 
-#main li {
+.item {
   float:left;
   position: relative;
   width: 100px;
@@ -93,6 +93,7 @@ a {
 #main img {
   width: 100%;
   margin-bottom: 3px;
+  cursor: pointer;
 }
 
 #main ul {
@@ -109,7 +110,7 @@ footer{
   color: #424949;
 }
 
-/* make shopping cart a sticky sidebar when scrolling the #store page*/
+/* make shopping cart a fixed sidebar when scrolling the #store page*/
 #store-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -179,4 +180,29 @@ button {
 
 button:hover {
   background-color: #F1C40F;
+}
+
+/* drag and drop food to the cart */
+.hovered {
+  border: 2px dotted black;
+}
+
+.box {
+  width: 100%;
+}
+
+.undraggable {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.has-food {
+  border: 2px solid black;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
 }

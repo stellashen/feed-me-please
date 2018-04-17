@@ -1,53 +1,74 @@
-// credit: David Brennan, drag and drop example:
-// https://medium.com/quick-code/simple-javascript-drag-drop-d044d8c5bed5
+// if (Modernizr.draganddrop) {
+//   // Browser supports HTML5 DnD.
+// } else {
+//   // Fallback to a library solution.
+// }
 
 class App {
 
   static init() {
 
-    App.box = document.getElementsByClassName('box')[0];
+    const boxes = document.getElementsByClassName('box');
 
-    App.box.addEventListener("dragstart", App.dragstart);
-    App.box.addEventListener("dragend", App.dragend);
+    for(const box of boxes) {
+      box.addEventListener("dragstart", App.dragstart);
+      box.addEventListener("dragend", App.dragend);
+    }
 
     const containers = document.getElementsByClassName('item');
+    const cartItems = document.getElementsByClassName('cart-item');
 
-    for(const container of containers) {
-      container.addEventListener("dragover", App.dragover);
-      container.addEventListener("dragenter", App.dragenter);
-      container.addEventListener("dragleave", App.dragleave);
-      container.addEventListener("drop", App.drop);
+    for(const cartItem of cartItems) {
+      cartItem.addEventListener("dragover", App.dragover);
+      cartItem.addEventListener("dragenter", App.dragenter);
+      cartItem.addEventListener("dragleave", App.dragleave);
+      cartItem.addEventListener("drop", App.drop);
     }
   }
 
   static dragstart() {
-    this.className += " held";
-
-    setTimeout(() => {
-      this.className="invisible";
-    }, 0);
+    this.id = "currentItem";
+    this.style.opacity = '0.4';
   }
 
   static dragend() {
-    this.className = "box";
+    this.style.opacity = '1';
   }
 
   static dragover(e) {
-    e.preventDefault();
+    if (e.preventDefault) {
+      e.preventDefault();
+    }
+
+    e.dataTransfer.dropEffect = 'move';
+
+    return false;
   }
 
   static dragenter(e) {
     e.preventDefault();
-    this.className += " hovered";
+    this.classList.add("hovered");
   }
 
   static dragleave() {
-    this.className = "item";
+    this.classList.remove("hovered");
   }
 
-  static drop() {
-    this.className = "item";
-    this.append(App.box);
+  static drop(e) {
+    if (e.stopPropagation) {
+      e.stopPropagation(); // stops the browser from redirecting.
+    }
+    this.className = "cart-item has-food";
+    const currentItem = document.getElementById("currentItem");
+    currentItem.removeAttribute("id");
+    this.appendChild(currentItem);
+
+    // items added to cart cannot be changed
+    currentItem.classList.add("undraggable");
+    this.removeEventListener("dragover", App.dragover);
+    this.removeEventListener("dragenter", App.dragenter);
+    this.removeEventListener("dragleave", App.dragleave);
+    this.removeEventListener("drop", App.drop);
   }
 }
 
