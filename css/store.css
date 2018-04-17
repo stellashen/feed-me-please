@@ -5,7 +5,9 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
-/* credit: part of code here was learnt from Eduonix's Udemy video:
+
+/* display items */
+/* credit: this part of code here was learnt from Eduonix's Udemy video:
 https://www.udemy.com/projects-in-html5/learn/v4/t/lecture/1293122?start=60 */
 *{
   margin: 0;
@@ -27,7 +29,7 @@ body{
 }
 
 .heading img {
-  width: 60px;
+  width: 10%;
 }
 
 h1 {
@@ -43,9 +45,8 @@ a {
 }
 
 .container {
-  width: 60%;
+  width: 100%;
   margin: 20px auto;
-  overflow: auto;
 }
 
 #navbar {
@@ -103,4 +104,73 @@ a {
 footer{
   text-align: center;
   color: #424949;
+}
+
+/* make shopping cart a sticky sidebar when scrolling the #store page*/
+#store-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#items-container {
+  width: 60%;
+  margin-left: 5%;
+}
+
+#shopping-cart-container {
+  position: fixed;
+  top: 50px;
+  left: 70%;
+  border: 1px solid gray;
+  width: 20%;
+  height: 520px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+
+#shopping-cart-container h3 {
+  top: 20px;
+}
+
+.cart-heading {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-heading img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cart-heading h2 {
+  margin-top: 10px;
+}
+
+.items-in-cart {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed gray;
+  margin: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 60px;
+  margin-top: 20px;
+  background-color: #D35400;
+  color: white;
+}
+
+button:hover {
+  background-color: #F1C40F;
 }

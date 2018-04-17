@@ -16,9 +16,6 @@ A link here to play: <empty now> <coming out soon!>
 
 OK you got this. Play the game here: <Hello I'm just a link of a game that does not exist yet but my developer is working on this thank you so much stay tuned>
 
-## Screenshots
-![store](https://res.cloudinary.com/devleg/image/upload/v1523878533/store_v1.png)
-
 ## Functionality & MVP
 - User can name the cat
 - User can drag and drop the food
@@ -28,6 +25,7 @@ OK you got this. Play the game here: <Hello I'm just a link of a game that does 
 - Game over when happiness drops to 0
 
 #### Bonus:
+- "Dream" button: It will trigger a game inside this game. => Your cat has a dream of food dropping from sky, and you can move your cat left/right to get the good foods and avoid the bad ones.
 - Dialogue box
 - Add storyline
 
@@ -49,6 +47,7 @@ There are two scenes in this game:
 
 #### frameworks:
 [html5-boilerplate](https://html5boilerplate.com/)
+
 [Fancybox](http://fancyapps.com/fancybox/3/)
 
 #### plugin:
