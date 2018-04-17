@@ -1,47 +1,124 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Feed Me Please! - Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Feed Me Please!</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="manifest" href="site.webmanifest">
+      <link rel="apple-touch-icon" href="icon.png">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <h1>Home</h1>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/store.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Montserrat|Open+Sans|Poiret+One|Source+Sans+Pro" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Home</h1>
 
-        <header>
-          <h1>Store</h1>
-          <div class="container">
-            <nav id="sidebar"></nav>
-          </div>
-        </header>
+      <header>
+        <h1></h1>
+        <div class="container">
+          <nav id="sidebar">
+            <button id="open-store">Click here to buy food</button>
+          </nav>
+        </div>
+      </header>
 
-        <section id="home">
-          <div class="container">
+      <section id="home">
+        <div class="container">
 
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <footer>
-          <div class="container">
-            <p>Feed Me Please!  &copy; 2018</p>
-          </div>
-        </footer>
+      <footer>
+        <div class="container">
+          <p>Feed Me Please!  &copy; 2018</p>
+        </div>
+      </footer>
+
+      <div id="modal">
+        <form class="modal-form">
+          <span class="modal-close js-modal-close">&times;</span>
+
+          <div id="store-wrapper">
+            <div id="items-container">
+            <header>
+              <div class="container">
+                <div class="heading">
+                  <img src="http://res.cloudinary.com/devleg/image/upload/v1523870399/fireworks.png">
+                  <img src="http://res.cloudinary.com/devleg/image/upload/v1523870399/decoration_line.png">
+                  <h1>The Best Store In Town</h1>
+                  <img src="http://res.cloudinary.com/devleg/image/upload/v1523870399/decoration_line.png">
+                  <img src="http://res.cloudinary.com/devleg/image/upload/v1523870399/fireworks.png">
+                </div>
+                <nav id="navbar">
+                  <p>Welcome! Please drag food to cart, and click "Buy" to purchase food. </p>
+                </nav>
+              </div>
+            </header>
+
+            <section id="main">
+              <div class="container foods">
+                <ul id="gallery">
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865974/canned_goods.png">Canned Fish</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865973/fishbone.png">Fish Bone</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865975/steak.png">Steak</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865974/chicken.png">Chicken</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866795/grape.png">Grape</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866795/strawberry.png">Strawberry</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866794/banana.png">Banana</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866257/alcohol.png">Alcohol</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865974/milk.png">Milk</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866803/juice.png">Orange Juice</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865974/cheese.png">Cheese</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523865974/mint.png">Mint</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866795/cake.png">Cake</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523866795/onion.png">Onion</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523867263/rawfish.png">Raw Fish</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523867263/raisin.png">Raisin</li>
+                  <li class="item"><img draggable="true" ondrag="setCurrentDragItem(event)" class="box" src="http://res.cloudinary.com/devleg/image/upload/v1523867750/chocolate.png">Chocolate</li>
+                </ul>
+              </div>
+            </section><!-- end of #main-->
+            </div>
+
+            <aside id="shopping-cart-container">
+              <div class="cart-heading">
+                <img src="https://res.cloudinary.com/devleg/image/upload/v1523923302/if_shopping_cart_286726.png">
+                <h2>Shopping Cart</h2>
+              </div>
+
+              <div class="items-in-cart">
+                <div class="cart-item"></div>
+                <div class="cart-item"></div>
+                <div class="cart-item"></div>
+                <div class="cart-item"></div>
+              </div>
+
+              <div>
+                <button type="button">Buy</button>
+              </div>
+            </aside>
+          </div><!-- end of #store-wrapper-->
+
+        </form>
+        <div class="modal-screen js-modal-close"></div>
+      </div><!--end of "modal is-open"-->
 
 
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/main.js"></script>
+      <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+      <script src="js/store.js"></script>
+      <script>
+        function setCurrentDragItem(event) {
+          event.target.id = "currentItem";
+        }
+      </script>
+      <script src="js/cart.js"></script>
 
-    </body>
+  </body>
 </html>
