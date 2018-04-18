@@ -27,9 +27,9 @@ font-family: 'Open Sans', sans-serif;
 
 .modal-form {
   position: absolute;
-  top: 20px;
-  left: 5%;
-  width: 88%;
+  top: 5%;
+  left: 2%;
+  width: 90%;
   padding: 20px;
   background: #fff;
   z-index: 3;

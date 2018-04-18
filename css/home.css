@@ -1,0 +1,54 @@
+.sidebar-home-wrapper {
+  display: flex;
+  height: 70vh;
+}
+
+.sidebar-home-wrapper aside{
+  margin-left: 5%;
+  width: 35%;
+}
+
+.sidebar-home-wrapper aside p {
+  font-size: 20px;
+}
+
+#sidebar {
+  margin-top: 20px;
+}
+
+#home {
+  background-image: url('https://res.cloudinary.com/devleg/image/upload/v1523855739/ian-dooley-331063-unsplash.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 55%;
+  margin-right: 5%;
+  position: relative;
+  min-height: 370px;
+}
+
+.cat {
+  width: 100px;
+  position: absolute;
+  bottom: 3%;
+  left: 15%;
+}
+
+footer {
+  padding: 20px;
+  margin-right: 4%;
+  float: right;
+}
+
+#my-bag-container{
+  margin-top: 30px;
+  border: 2px solid #F1C40F;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 10px #F7DC6F;
+  -webkit-box-shadow: 0 0 10px #F7DC6F;
+  box-shadow: 0 0 10px #F7DC6F;
+}
