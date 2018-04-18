@@ -1,5 +1,4 @@
 const modal = document.getElementById('modal');
-
 const openButton = document.getElementById("open-store");
 
 openButton.addEventListener('click', function(event) {
