@@ -6,8 +6,8 @@ Hello fellow humans. `Feed Me Please!` is an educational browser game built with
 - provide a **low-pressure cat-feeding experience**
 - answer this question you may have: **What are the foods my cat can / cannot eat?**
 
-## Technical Challenges
-#### Modal using JavaScript and CSS
+## Technical Details
+### Modal using JavaScript and CSS
 event listeners for triggers to open/close modal:
 ```js
 const modal = document.getElementById('modal');
@@ -25,7 +25,8 @@ openButton.addEventListener('click', function(event) {
   }
 });
 ```
-#### HTML5 Drag and Drop
+### HTML5 Drag and Drop
+#### drag food to cart
 For implementing dragging food items and dropping them in cart, relevant code is in `cart.js`.
 
 Event listeners are added to all food items to make them draggable. Event listeners are added to all cart spots to make them holders for dropping items.
@@ -77,6 +78,51 @@ static drop(e) {
   -ms-user-select: none;
 }
 ```
+
+#### Place cat anywhere inside home
+
+Cat has an initial position. But the user can drag the cat to somewhere else at home.
+
+Generate drop spots dynamically according to home size:
+
+```js
+// home.js
+const home = document.getElementById('home');
+const homeWidth = home.clientWidth;
+const homeHeight = home.clientHeight;
+
+// generate spots
+let left = 0;
+let bottom = 0;
+while (bottom < homeHeight - 105) {
+  left += 5;
+  if (left > homeWidth - 105) {
+    bottom += 5;
+    left = 0;
+  }
+  const spot = document.createElement("div");
+  spot.classList.add("spot");
+  spot.style.left = `${left}px`;
+  spot.style.bottom = `${bottom}px`;
+  home.appendChild(spot);
+```
+```
+//home.css
+.cat {
+  width: 100px;
+  z-index: 100;
+}
+.spot {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+```
+During development, add `border: 1px solid black;` to show the grids:
+
+<img src="https://res.cloudinary.com/devleg/image/upload/v1524074232/spots.png" width="400">
+
+#### Browser compatibility
 
 Test for browser compatibility: works in Chrome, Firefox, Safari.
 
