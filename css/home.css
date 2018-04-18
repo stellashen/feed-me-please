@@ -30,6 +30,10 @@
 
 .cat {
   width: 100px;
+  z-index: 100;
+}
+
+.initial-position {
   position: absolute;
   bottom: 3%;
   left: 15%;
@@ -62,4 +66,16 @@ footer {
 
 #bag-image {
   margin-left: 55px;
+}
+
+/* change cat position on drag*/
+.spot {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
 }
