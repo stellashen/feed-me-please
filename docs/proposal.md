@@ -23,6 +23,7 @@ Hello fellow humans. `Feed Me Please!` is an educational browser game built with
 - Create welcome Modal, where user enters: user's name, and cat's name
 - "Dream" button: It will trigger a game inside this game. => Your cat has a dream of food dropping from sky, and you can move your cat left/right to get the good foods and avoid the bad ones.
 - Dialogue box
+- Users can press a button to record a video and share to instagram/Facebook/email
 - Add storyline
 
 ## Wireframes

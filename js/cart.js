@@ -1,9 +1,3 @@
-// if (Modernizr.draganddrop) {
-//   // Browser supports HTML5 DnD.
-// } else {
-//   // Fallback to a library solution.
-// }
-
 class App {
 
   static init() {
@@ -55,6 +49,9 @@ class App {
   }
 
   static drop(e) {
+    if(e.preventDefault) {
+      e.preventDefault();
+    }
     if (e.stopPropagation) {
       e.stopPropagation(); // stops the browser from redirecting.
     }

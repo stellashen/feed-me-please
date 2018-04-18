@@ -43,12 +43,23 @@ footer {
 
 #my-bag-container{
   margin-top: 30px;
-  border: 2px solid #F1C40F;
+  border: 2px solid gray;
   padding: 20px;
   width: 260px;
   text-align: center;
   border-radius: 10px;
+  -moz-box-shadow: 0 0 10px gray;
+  -webkit-box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px gray;
+}
+
+#my-bag-container:hover{
+  border: 2px solid #F7DC6F;
   -moz-box-shadow: 0 0 10px #F7DC6F;
   -webkit-box-shadow: 0 0 10px #F7DC6F;
   box-shadow: 0 0 10px #F7DC6F;
+}
+
+#bag-image {
+  margin-left: 55px;
 }
