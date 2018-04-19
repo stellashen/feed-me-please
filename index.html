@@ -133,9 +133,11 @@
       <script src="js/vendor/modernizr-3.5.0.min.js"></script>
       <script src="js/home.js"></script>
       <script src="js/store.js"></script>
+      <script src="js/cart.js"></script>
       <script>
+        // add purchased items to my bag
         function setCurrentDragItem(event) {
-          event.target.id = "currentItem";
+          event.target.classList.add("current-item");
         }
 
         function buy() {
@@ -154,6 +156,7 @@
             for(const cartFood of cartFoods) {
               // add food to bag with container
               myBag.appendChild(cartFood);
+              myBag.addEventListener("click", selectItemToFeed);
               // add cart holders back
               const holder = document.createElement("div");
               holder.classList.add("cart-item");
@@ -168,8 +171,18 @@
 
           return false;
         }
+
+        feed cat
+        selectItemToFeed(e) {
+          e.preventDefault();
+          dropSelected(e);
+          this.classList.add("to-feed");
+        }
+
+        dropSelected(e) {
+          e.preventDefault();
+        }
       </script>
-      <script src="js/cart.js"></script>
 
   </body>
 </html>

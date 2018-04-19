@@ -35,7 +35,7 @@ Since event listeners are added to all food items, how does JavaScript know whic
 
 ```js
 static dragstart() {
-  this.id = "currentItem";
+  this.classList.add("current-item");
   this.style.opacity = '0.4';
 }
 
@@ -55,8 +55,8 @@ static drop(e) {
     e.stopPropagation(); // stops the browser from redirecting.
   }
   this.className = "cart-item has-food";
-  const currentItem = document.getElementById("currentItem");
-  currentItem.removeAttribute("id");
+  const currentItem = document.getElementsByClassName("current-item")[0];
+  currentItem.classList.remove("current-item");
   this.appendChild(currentItem);
 
   // items added to cart cannot be changed

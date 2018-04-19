@@ -21,7 +21,7 @@ class App {
   }
 
   static dragstart() {
-    this.id = "currentItem";
+    this.classList.add("current-item");
     this.style.opacity = '0.4';
   }
 
@@ -56,8 +56,8 @@ class App {
       e.stopPropagation(); // stops the browser from redirecting.
     }
     this.className = "cart-item has-food";
-    const currentItem = document.getElementById("currentItem");
-    currentItem.removeAttribute("id");
+    const currentItem = document.getElementsByClassName("current-item")[0];
+    currentItem.classList.remove("current-item");
     this.appendChild(currentItem);
 
     // items added to cart cannot be changed
