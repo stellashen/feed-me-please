@@ -179,12 +179,22 @@
 
         function feed() {
           const foodContainer = document.getElementsByClassName("to-feed")[0];
-          const food = foodContainer.childNodes[0];
           const myBag = document.getElementById("items-in-bag");
-          if (food !== null) {
-            myBag.removeChild(foodContainer);
+          if (myBag.children[0].id === "empty-bag-warning") {
+            alert("There is nothing to feed. Go to the store to buy some?");
           }
-          eat(food);
+
+          if (foodContainer !== undefined && foodContainer !== null) {
+            const food = foodContainer.childNodes[0];
+            myBag.removeChild(foodContainer);
+            if (food !== undefined && food !== null) {
+              eat(food);
+            }
+            if (myBag.childElementCount === 1) {
+              myBag.children[0].innerText = "Your bag is empty.";
+              myBag.children[0].id = "empty-bag-warning";
+            }
+          }
         }
 
         function eat(food) {
