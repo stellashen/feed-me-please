@@ -59,12 +59,12 @@ footer {
   box-shadow: 0 0 10px gray;
 }
 
-#my-bag-container:hover{
+/* #my-bag-container:hover{
   border: 2px solid #F7DC6F;
   -moz-box-shadow: 0 0 10px #F7DC6F;
   -webkit-box-shadow: 0 0 10px #F7DC6F;
   box-shadow: 0 0 10px #F7DC6F;
-}
+} */
 
 #bag-image {
   margin-left: 55px;
@@ -88,4 +88,15 @@ footer {
   flex-wrap: wrap;
   overflow-y: scroll;
   max-height: 250px;
+}
+
+/* food in my bag*/
+.in-bag {
+  border: 0;
+}
+.to-feed {
+  border: 2px solid #F7DC6F;
+  -moz-box-shadow: 0 0 10px #F7DC6F;
+  -webkit-box-shadow: 0 0 10px #F7DC6F;
+  box-shadow: 0 0 10px #F7DC6F;
 }
