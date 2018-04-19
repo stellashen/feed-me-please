@@ -43,7 +43,7 @@ class Cat {
   }
 
   static dragstart() {
-    this.id = "currentCat";
+    this.classList.add("current-cat");
     this.style.opacity = '0.4';
   }
 
@@ -75,8 +75,8 @@ class Cat {
     if (e.stopPropagation) {
       e.stopPropagation(); // stops the browser from redirecting.
     }
-    const currentCat = document.getElementById("currentCat");
-    currentCat.removeAttribute("id");
+    const currentCat = document.getElementsByClassName("current-cat")[0];
+    currentCat.classList.remove("current-cat");
     this.appendChild(currentCat);
   }
 }

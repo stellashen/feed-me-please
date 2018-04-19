@@ -40,7 +40,7 @@
             </div>
 
             <div>
-              <button type="button">Feed</button>
+              <button type="button" onclick="feed()">Feed</button>
             </div>
           </section>
         </nav>
@@ -48,7 +48,7 @@
       </aside>
 
       <section id="home">
-        <img draggable="true" src="https://res.cloudinary.com/devleg/image/upload/v1523854992/if_cat_hungry_185523.png" class="cat initial-position">
+        <img draggable="true" src="https://res.cloudinary.com/devleg/image/upload/v1523854992/if_cat_hungry_185523.png" class="cat initial-position" id="tabby">
 
 
       </section>
@@ -175,6 +175,20 @@
             selectedFood.classList.remove("to-feed");
           }
           e.currentTarget.classList.add("to-feed");
+        }
+
+        function feed() {
+          const food = document.getElementsByClassName("to-feed")[0];
+          const myBag = document.getElementById("items-in-bag");
+          if (food !== null) {
+            myBag.removeChild(food);
+          }
+          eat();
+        }
+
+        function eat() {
+          const tabby = document.getElementById('tabby');
+          tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854948/meal.gif";
         }
 
       </script>
