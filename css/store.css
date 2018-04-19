@@ -208,7 +208,7 @@ footer{
   margin-top: 10px;
 }
 
-.items-in-cart {
+#items-in-cart {
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;

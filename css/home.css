@@ -1,11 +1,13 @@
 .sidebar-home-wrapper {
   display: flex;
-  height: 70vh;
+  height: 90vh;
+  margin-top: 20px;
 }
 
 .sidebar-home-wrapper aside{
   margin-left: 5%;
   width: 35%;
+  min-width: 365px;
 }
 
 .sidebar-home-wrapper aside p {
@@ -30,7 +32,8 @@
 
 .cat {
   width: 100px;
-  z-index: 100;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .initial-position {
@@ -40,8 +43,7 @@
 }
 
 footer {
-  padding: 20px;
-  margin-right: 4%;
+  margin-right: 5%;
   float: right;
 }
 
@@ -72,11 +74,18 @@ footer {
 .spot {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
   position: absolute;
 }
 
 #home {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* style my bag */
+#items-in-bag{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 250px;
 }

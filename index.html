@@ -19,7 +19,6 @@
       <link href="https://fonts.googleapis.com/css?family=Raleway|Montserrat|Open+Sans|Poiret+One|Source+Sans+Pro" rel="stylesheet">
   </head>
   <body>
-      <h1>Home</h1>
 
 <div class="sidebar-home-wrapper">
       <aside>
@@ -36,8 +35,8 @@
               <h2>My bag</h2>
             </div>
 
-            <div class="items-in-bag">
-              <p>Your bag is empty.<p>
+            <div id="items-in-bag">
+              <p id="empty-bag-warning">Your bag is empty.<p>
             </div>
 
             <div>
@@ -113,7 +112,7 @@
                 <h2>Shopping Cart</h2>
               </div>
 
-              <div class="items-in-cart">
+              <div id="items-in-cart">
                 <div class="cart-item"></div>
                 <div class="cart-item"></div>
                 <div class="cart-item"></div>
@@ -121,7 +120,7 @@
               </div>
 
               <div>
-                <button type="button">Buy</button>
+                <button type="button" onClick={buy()}>Buy</button>
               </div>
             </aside>
           </div><!-- end of #store-wrapper-->
@@ -137,6 +136,37 @@
       <script>
         function setCurrentDragItem(event) {
           event.target.id = "currentItem";
+        }
+
+        function buy() {
+          e => e.preventDefault();
+
+          const cartFoods = document.getElementsByClassName('has-food');
+          const myBag = document.getElementById("items-in-bag");
+          const emptyBag = document.getElementById("empty-bag-warning");
+          debugger;
+          const cart = document.getElementById("items-in-cart");
+
+          if (cartFoods.length > 0) {
+            if (emptyBag !== null) {
+              myBag.removeChild(emptyBag);
+            }
+            for(const cartFood of cartFoods) {
+              // add food to bag with container
+              myBag.appendChild(cartFood);
+              // add cart holders back
+              const holder = document.createElement("div");
+              holder.classList.add("cart-item");
+              cart.appendChild(holder);
+              // add eventListeners to make new holders drop positions
+              holder.addEventListener("dragover", App.dragover);
+              holder.addEventListener("dragenter", App.dragenter);
+              holder.addEventListener("dragleave", App.dragleave);
+              holder.addEventListener("drop", App.drop);
+            }
+          }
+
+          return false;
         }
       </script>
       <script src="js/cart.js"></script>

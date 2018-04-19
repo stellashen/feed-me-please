@@ -110,7 +110,8 @@ while (bottom < homeHeight - 105) {
 //home.css
 .cat {
   width: 100px;
-  z-index: 100;
+  z-index: 1;
+  cursor: pointer;
 }
 .spot {
   width: 100px;

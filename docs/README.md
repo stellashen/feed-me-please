@@ -1,4 +1,4 @@
-# Feed Me Please! - A cat-feeding game
+# Project proposal: Feed Me Please! - A cat-feeding game
 
 Hello fellow humans. `Feed Me Please!` is an educational browser game built with HTML5 and JavaScript.
 
