@@ -6,6 +6,11 @@ Hello fellow humans. `Feed Me Please!` is an educational browser game built with
 - provide a **low-pressure cat-feeding experience**
 - answer this question you may have: **What are the foods my cat can / cannot eat?**
 
+## Screenshots
+<img src="https://res.cloudinary.com/devleg/image/upload/v1524215326/home_v1.png" width="800">
+
+<img src="https://res.cloudinary.com/devleg/image/upload/v1524215318/store_v1.png" width="800">
+
 ## Technical Details
 ### Modal using JavaScript and CSS
 event listeners for triggers to open/close modal:
@@ -141,5 +146,7 @@ This project is using this license:
 
 #### 3. Messages cited:
 _[What not to feed your cat](https://www.vets-now.com/2017/02/foods-poisonous-to-cats/)_
--[Can My Cat Eat That? 30 Foods Cats Can and Can’t Eat](https://www.kittycatter.com/can-cats-eat-chocolate-bananas-cheese/)_
--[Foods Toxic to Cats](http://www.orphankittenrescue.com/foods_toxic_to_cats)_
+
+_[Can My Cat Eat That? 30 Foods Cats Can and Can’t Eat](https://www.kittycatter.com/can-cats-eat-chocolate-bananas-cheese/)_
+
+_[Foods Toxic to Cats](http://www.orphankittenrescue.com/foods_toxic_to_cats)_
