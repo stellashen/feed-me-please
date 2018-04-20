@@ -26,6 +26,7 @@ class App {
   }
 
   static dragend() {
+    this.classList.remove("current-item");
     this.style.opacity = '1';
   }
 
@@ -57,7 +58,6 @@ class App {
     }
     this.className = "cart-item has-food";
     const currentItem = document.getElementsByClassName("current-item")[0];
-    currentItem.classList.remove("current-item");
     this.appendChild(currentItem);
 
     // items added to cart cannot be changed
