@@ -105,3 +105,24 @@ footer {
   width: 100%;
   text-align: center;
 }
+
+/* pop-up windows */
+.pop {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 45%;
+  width: 45%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #F7DC6F;
+  -moz-box-shadow: 0 0 10px #F7DC6F;
+  -webkit-box-shadow: 0 0 10px #F7DC6F;
+  box-shadow: 0 0 20px #F7DC6F;
+  background-color: white;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}

@@ -116,7 +116,7 @@
                   <li class="item"><img draggable="true" class="box good" id="peas" src="https://res.cloudinary.com/devleg/image/upload/v1524200233/peas.png">Peas</li>
                   <li class="item"><img draggable="true" class="box walk" id="lemon" src="https://res.cloudinary.com/devleg/image/upload/v1524200233/lemon.png">Lemon</li>
                   <li class="item"><img draggable="true" class="box walk" id="lavendar" src="https://res.cloudinary.com/devleg/image/upload/v1524200232/lavendar.png">Lavendar</li>
-                  <li class="item"><img draggable="true" class="box ok" id="salmon" src="https://res.cloudinary.com/devleg/image/upload/v1524200233/lemon.png">salmon</li>
+                  <li class="item"><img draggable="true" class="box ok" id="salmon" src="https://res.cloudinary.com/devleg/image/upload/v1524200232/if_salmon_921030.png">salmon</li>
                   <li class="item"><img draggable="true" class="box good" id="melon" src="https://res.cloudinary.com/devleg/image/upload/v1524200232/if_melon-slice_2226245.png">Melon</li>
                   <li class="item"><img draggable="true" class="box good" id="cherry" src="https://res.cloudinary.com/devleg/image/upload/v1524200231/cherry.png">Cherry</li>
                   <li class="item"><img draggable="true" class="box good" id="cooked eggs" src="https://res.cloudinary.com/devleg/image/upload/v1524203701/if_Breakfast-06_1522937.png">Cooked eggs</li>
@@ -206,9 +206,7 @@
           const myBag = document.getElementById("items-in-bag");
           if (myBag.children[0].id === "empty-bag-warning") {
             alert("There is nothing to feed. Go to the store to buy some?");
-          }
-
-          if (foodContainer !== undefined && foodContainer !== null) {
+          } else if (foodContainer !== undefined && foodContainer !== null) {
             const food = foodContainer.childNodes[0];
             myBag.removeChild(foodContainer);
             if (food !== undefined && food !== null) {
@@ -220,6 +218,8 @@
               empty.id = "empty-bag-warning";
               myBag.prepend(empty);
             }
+          } else {
+            alert("Please select a food (just click it in the bag), and then feed.");
           }
         }
 
@@ -227,52 +227,70 @@
           const tabby = document.getElementById('tabby');
           if (food.classList.contains("good")) {
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854948/meal.gif";
-            alert(`Love it! Yummy, ${food.id} is great.`);
+            pop(`Love it! Yummy, ${food.id} is great.`);
           } else if (food.classList.contains("bad")){
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854993/if_cat_pirate_185520.png";
             message(food.id);
           } else if (food.classList.contains("ok")){
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854958/burp.gif";
-            alert(`It's OK to feed ${food.id}. But don't eat not too much.`);
+            pop(`It's OK to feed ${food.id}. But don't eat not too much.`);
           } else if (food.classList.contains("walk")){
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854939/walk.gif";
-            alert(`Oops. Your cat seems to hate the smell of ${food.id}.`);
+            pop(`Oops. Your cat seems to hate the smell of ${food.id}.`);
           }
+        }
+
+        function pop(message) {
+          const page = document.getElementsByClassName("sidebar-home-wrapper")[0];
+          const oldMessage = document.getElementsByClassName("pop")[0];
+
+          if (oldMessage !== undefined) {
+            oldMessage.classList.add("hide");
+          }
+
+          const newMessage = document.createElement("div");
+          newMessage.classList.add("pop");
+          newMessage.innerText = message;
+          page.appendChild(newMessage);
+
+          window.setTimeout(()=>{
+            page.removeChild(newMessage);
+          }, 10000);
         }
 
         function message(name) {
           if (name === "alcohol") {
-            alert("Alcohol is bad for your cat! As little as a tablespoon of alcohol can lead to problems for your cat. It can cause severe liver and brain damage.");
+            pop("Alcohol is bad for your cat! As little as a tablespoon of alcohol can lead to problems for your cat. It can cause severe liver and brain damage.");
           }
           if (name === "chocolate") {
-            alert("Chocolate is bad for your cat! Most cats aren’t attracted to chocolate anyway, but you should still be careful. In addition to the sugar content, chocolate also contains a dangerous compound called theobromine which can be toxic in even very small quantities. Dark chocolate and unsweetened baking chocolate generally have the highest levels of theobromine, so keep these foods far away from your cat. Symptoms of theobromine poisoning may include heart palpitations, seizures, tremors, and even sudden death.");
+            pop("Chocolate is bad for your cat! Most cats aren’t attracted to chocolate anyway, but you should still be careful. In addition to the sugar content, chocolate also contains a dangerous compound called theobromine which can be toxic in even very small quantities.");
           }
           if (name === "milk") {
-            alert("Milk is bad for your cat! Some cats are lactose intolerant and if they eat dairy products it can cause vomiting and diarrhoea.");
+            pop("Milk is bad for your cat! Some cats are lactose intolerant and if they eat dairy products it can cause vomiting and diarrhoea.");
           }
           if (name === "cheese") {
-            alert("Cheese is bad for your cat! Some cats are lactose intolerant and if they eat dairy products it can cause vomiting and diarrhoea.");
+            pop("Cheese is bad for your cat! Some cats are lactose intolerant and if they eat dairy products it can cause vomiting and diarrhoea.");
           }
           if (name === "raw fish") {
-            alert("Raw fish is bad for your cat! Never feed your cat raw meat or fish because it could transmit food-borne pathogens like salmonella.");
+            pop("Raw fish is bad for your cat! Never feed your cat raw meat or fish because it could transmit food-borne pathogens like salmonella.");
           }
           if (name === "onion") {
-            alert("Onion is bad for your cat! All members of the onion family can cause problems if eaten in sufficient quantity. A little bit of onion is not likely to cause any problems. However, eating too much onion may cause digestive upset. Eating some type of onion on a regular basis could cause anemia.");
+            pop("Onion is bad for your cat! All members of the onion family can cause problems if eaten in sufficient quantity. A little bit of onion is not likely to cause any problems. However, eating too much onion may cause digestive upset. Eating some type of onion on a regular basis could cause anemia.");
           }
           if (name === "salted chicken") {
-            alert("Salted chicken is bad for your cat! Or any salted food. Large amounts of salt can produce excessive thirst and urination, or even sodium ion poisoning in pets. Signs that your pet may have eaten too many salty foods include vomiting, diarrhea, depression, tremors, elevated body temperature, seizures and even death.");
+            pop("Salted chicken is bad for your cat! Or any salted food. Large amounts of salt can produce excessive thirst and urination, or even sodium ion poisoning in pets. Signs that your pet may have eaten too many salty foods include vomiting, diarrhea, depression, tremors, elevated body temperature, seizures and even death.");
           }
           if (name === "grape") {
-            alert("Grapes are incredibly toxic to cats. Feeding your cat grapes could put him at risk for kidney failure. Some of the early signs may include vomiting and hyperactivity.");
+            pop("Grapes are incredibly toxic to cats. Feeding your cat grapes could put him at risk for kidney failure. Some of the early signs may include vomiting and hyperactivity.");
           }
           if (name === "raisin") {
-            alert("Grapes are incredibly toxic to cats. Feeding your cat grapes could put him at risk for kidney failure. Some of the early signs may include vomiting and hyperactivity.");
+            pop("Grapes are incredibly toxic to cats. Feeding your cat grapes could put him at risk for kidney failure. Some of the early signs may include vomiting and hyperactivity.");
           }
           if (name === "mushroom") {
-            alert("Mushrooms? Not recommended! Some cats love the smell of mushrooms and would eat them, if they could get their paws on some. While a small amount of mushrooms may not harm your cat, certain varieties are incredibly toxic so it is better to be safe than sorry. Wild mushrooms contain a number of harmful toxins and may induce symptoms such as vomiting, diarrhea, drooling, and liver damage. Unfortunately, these symptoms tend not to develop until 6 to 24 hours after ingestion and they may subside and then come back even worse. If you don’t catch mushroom toxicity early and get your cat the treatment he needs, he could go into liver failure.");
+            pop("Mushrooms? Not recommended! While a small amount of mushrooms may not harm your cat, certain varieties are incredibly toxic so it is better to be safe than sorry.");
           }
           if (name === "dog food") {
-            alert("Dog food is bad for your cat! Though dog food and cat food may look alike, they are completely different products. Not only is dog food formulated according to a different nutrient profile, but it contains higher levels of certain nutrients which could be bad for your cat. ");
+            pop("Dog food is bad for your cat! Though dog food and cat food may look alike, they are completely different products. Not only is dog food formulated according to a different nutrient profile, but it contains higher levels of certain nutrients which could be bad for your cat. ");
           }
         }
 

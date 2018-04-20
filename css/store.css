@@ -22,7 +22,7 @@ font-family: 'Open Sans', sans-serif;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .modal-form {
@@ -32,7 +32,7 @@ font-family: 'Open Sans', sans-serif;
   width: 90%;
   padding: 20px;
   background: #fff;
-  z-index: 3;
+  z-index: 100;
   border-radius: 5px;
   border: 1px solid #000;
 }
