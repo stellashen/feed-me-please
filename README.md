@@ -6,7 +6,7 @@ Hello fellow humans. `Feed Me Please!` is an educational browser game built with
 - provide a **low-pressure cat-feeding experience**
 - answer this question you may have: **What are the foods my cat can / cannot eat?**
 
-[Play the game](https://stellashen.github.io/feed-me-please/)
+#### [Click me to play the game](https://stellashen.github.io/feed-me-please/)
 
 ## Screenshots
 <img src="https://res.cloudinary.com/devleg/image/upload/v1524249391/home_v2.png" width="800">
