@@ -143,3 +143,26 @@ i:hover {
   font-size: 16px;
   line-height: 25px;
 }
+
+/* welcome modal */
+#welcome-modal {
+  display: none;
+}
+
+#welcome-modal.is-open {
+  display: block;
+}
+
+
+#welcome-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  background: #fff;
+  z-index: 100;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 20px;
+}

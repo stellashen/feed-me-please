@@ -102,3 +102,14 @@ function displayMessage(name) {
     pop("Dog food is bad for your cat! Though dog food and cat food may look alike, they are completely different products. Not only is dog food formulated according to a different nutrient profile, but it contains higher levels of certain nutrients which could be bad for your cat. ");
   }
 }
+
+// welcome modal
+const welcomeModal = document.getElementById('welcome-modal');
+const closeWelcomeButtons = document.getElementsByClassName("welcome-modal-close");
+
+for (let i = 0; i < closeWelcomeButtons.length; i++) {
+  closeWelcomeButtons[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    welcomeModal.removeAttribute("class");
+  });
+}

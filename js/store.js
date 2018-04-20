@@ -8,7 +8,7 @@ openButton.addEventListener('click', function(event) {
   for (let i = 0; i < closeButtons.length; i++) {
     closeButtons[i].onclick = function() {
       event.preventDefault();
-      modal.classList.remove("is-open");
+      modal.removeAttribute("class");
     };
   }
 });
