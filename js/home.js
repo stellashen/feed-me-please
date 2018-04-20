@@ -42,7 +42,7 @@ function eat(food) {
     displayMessage(food.id);
   } else if (food.classList.contains("ok")){
     tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854958/burp.gif";
-    pop(`It's OK to feed ${food.id}. But don't eat not too much.`);
+    pop(`It's OK to feed ${food.id}. But don't eat too much.`);
   } else if (food.classList.contains("walk")){
     tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854939/walk.gif";
     pop(`Oops. Your cat seems to hate the smell of ${food.id}.`);
