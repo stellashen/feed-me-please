@@ -9,9 +9,9 @@ Hello fellow humans. `Feed Me Please!` is an educational browser game built with
 [Play the game](https://stellashen.github.io/feed-me-please/)
 
 ## Screenshots
-<img src="https://res.cloudinary.com/devleg/image/upload/v1524216530/home_v1.png" width="800">
+<img src="https://res.cloudinary.com/devleg/image/upload/v1524249391/home_v2.png" width="800">
 
-<img src="https://res.cloudinary.com/devleg/image/upload/v1524215318/store_v1.png" width="800">
+<img src="https://res.cloudinary.com/devleg/image/upload/v1524249385/store_v2.png" width="800">
 
 ## Technical Details
 ### Modal using JavaScript and CSS
