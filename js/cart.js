@@ -9,7 +9,6 @@ class App {
       box.addEventListener("dragend", App.dragend);
     }
 
-    const containers = document.getElementsByClassName('item');
     const cartItems = document.getElementsByClassName('cart-item');
 
     for(const cartItem of cartItems) {
@@ -66,6 +65,16 @@ class App {
     this.removeEventListener("dragenter", App.dragenter);
     this.removeEventListener("dragleave", App.dragleave);
     this.removeEventListener("drop", App.drop);
+
+    // mark sold out
+    const containers = document.getElementsByClassName('item');
+    const soldout = document.createElement('p');
+    soldout.innerText = 'sold out';
+    for(const container of containers) {
+      if (container.children.length === 0) {
+        container.appendChild(soldout);
+      }
+    }
   }
 }
 
