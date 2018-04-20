@@ -2,11 +2,12 @@
   "name": "feed-me-please",
   "version": "1.0.0",
   "description": "Hello fellow humans. `Feed Me Please!` is an educational browser game built with HTML5, JavaScript and jQuery.",
-  "main": "index.js",
+  "main": "home.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "build": "npm run build:less && npm run build:bundle"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,8 @@
   },
   "devDependencies": {
     "redux-logger": "^3.0.6"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
