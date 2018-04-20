@@ -128,3 +128,18 @@ During development, add `border: 1px solid black;` to show the grids:
 Test for browser compatibility: works in Chrome, Firefox, Safari.
 
 Note: HTML5 Drag and Drop are supported by most browsers, but may not be supported in some older browser versions.
+
+## Credit
+#### 1. Cat images
+Cat characters are designed by [Denis Sazhin](http://iconka.com/en/).
+
+This project is using this license:
+- Cat Power Animated – Regular Commercial License
+
+#### 2. [Unsplash](https://unsplash.com/) images
+[Home photo](https://unsplash.com/photos/_-JR5TxKNSo) by ian dooley
+
+#### 3. Messages cited:
+_[What not to feed your cat](https://www.vets-now.com/2017/02/foods-poisonous-to-cats/)_
+-[Can My Cat Eat That? 30 Foods Cats Can and Can’t Eat](https://www.kittycatter.com/can-cats-eat-chocolate-bananas-cheese/)_
+-[Foods Toxic to Cats](http://www.orphankittenrescue.com/foods_toxic_to_cats)_

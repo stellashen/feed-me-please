@@ -100,3 +100,8 @@ footer {
   -webkit-box-shadow: 0 0 10px #F7DC6F;
   box-shadow: 0 0 10px #F7DC6F;
 }
+
+#empty-bag-warning {
+  width: 100%;
+  text-align: center;
+}
