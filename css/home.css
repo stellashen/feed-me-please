@@ -1,6 +1,6 @@
 .sidebar-home-wrapper {
   display: flex;
-  height: 90vh;
+  height: 80vh;
   margin-top: 20px;
 }
 
@@ -47,6 +47,25 @@ footer {
   float: right;
 }
 
+footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+footer p {
+  margin-left: 50px;
+}
+
+i {
+  padding: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+i:hover {
+  color: blue;
+}
+
 #my-bag-container{
   margin-top: 30px;
   border: 2px solid gray;
@@ -58,13 +77,6 @@ footer {
   -webkit-box-shadow: 0 0 10px gray;
   box-shadow: 0 0 10px gray;
 }
-
-/* #my-bag-container:hover{
-  border: 2px solid #F7DC6F;
-  -moz-box-shadow: 0 0 10px #F7DC6F;
-  -webkit-box-shadow: 0 0 10px #F7DC6F;
-  box-shadow: 0 0 10px #F7DC6F;
-} */
 
 #bag-image {
   margin-left: 55px;
@@ -125,4 +137,9 @@ footer {
 
 .hide {
   display: none;
+}
+
+#small {
+  font-size: 16px;
+  line-height: 25px;
 }
