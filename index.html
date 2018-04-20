@@ -201,12 +201,16 @@
           const tabby = document.getElementById('tabby');
           if (food.classList.contains("good")) {
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854948/meal.gif";
+            alert(`Love it! Yummy, ${food.id} is great.`);
           } else if (food.classList.contains("bad")){
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854993/if_cat_pirate_185520.png";
+            alert(`Avoid feeding ${food.id} to your cat. Dangerous.`);
           } else if (food.classList.contains("ok")){
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854958/burp.gif";
+            alert(`It's OK to feed ${food.id}, but the nutritional value is low for cats.`);
           } else if (food.classList.contains("walk")){
             tabby.src="https://res.cloudinary.com/devleg/image/upload/v1523854939/walk.gif";
+            alert("Oops. You cat seems to hate the smell.");
           }
         }
 
