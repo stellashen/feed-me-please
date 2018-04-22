@@ -8,6 +8,8 @@ Hello fellow humans. `Feed Me Please!` is an educational browser game built with
 
 #### [Click me to play the game](https://stellashen.github.io/feed-me-please/)
 
+(IE browser user: Sorry, _Feed Me Please!_ currently doesn't support IE browser.)
+
 ## Screenshots
 <img src="https://res.cloudinary.com/devleg/image/upload/v1524249391/home_v2.png" width="800">
 
@@ -132,7 +134,7 @@ During development, add `border: 1px solid black;` to show the grids:
 
 #### Browser compatibility
 
-Test for browser compatibility: works in Chrome, Firefox, Safari.
+Test for browser compatibility: works in Chrome, Firefox, Safari. Doesn't work in IE.
 
 Note: HTML5 Drag and Drop are supported by most browsers, but may not be supported in some older browser versions.
 
