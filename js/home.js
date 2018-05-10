@@ -64,7 +64,7 @@ function pop(message) {
 
   window.setTimeout(()=>{
     page.removeChild(newMessage);
-  }, 10000);
+  }, 30000);
 }
 
 function displayMessage(name) {
